@@ -1,0 +1,10 @@
+1. Montserrat - regular, medium, semi-bold, background-color
+2. Work Sans - regular, medium
+3. Nunito - bold, black
+4. Poppins - meduim
+
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;

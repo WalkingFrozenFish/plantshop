@@ -1,0 +1,527 @@
+/* Обнуляем стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Стили навигационного меню */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    position: absolute;
+    width: 1132px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#logo {
+    width: 36px;
+    height: 36px;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#search, #cart {
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+#sign-up a {
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #156963;
+    background-color: #fff;
+}
+
+#sign-in a {
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #156963;
+}
+/*  */
+
+
+/* Стили для контейнера и секций */
+.main, .main-section {
+    max-width: 100vw;
+}
+
+.main-section {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+/* Слайдер */
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-image {
+    width: 608px;
+    height: 740px;
+    object-fit: cover;
+}
+
+.slide-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 83px;
+    color: #156963;
+    width: 523px;
+    margin-bottom: 24px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 186px;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.description {
+    /* padding-left: 77px; */
+}
+
+.slide-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #2C1500;
+    width: 493px;
+    margin-bottom: 110px;
+
+}
+
+
+/* Белый блок закрывающий часть картинки слайдера */
+.white-block {
+    position: absolute;
+    width: 350px;
+    height: 582px;
+    background-color: #ffffff;
+    /* left: 720px; */
+    left: 42%;
+    top: 40px;
+    z-index: 2;
+}
+/*  */
+
+/* Блок кнопок слайдера */
+.buttons {
+    display: flex;
+    cursor: pointer;
+}
+
+.button-prev, .button-next {
+    min-width: 320px;
+    min-height: 160px;
+    padding: 39px 39px;
+}
+
+.button-next {
+    background-color: #156963;;
+}
+
+.first-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+#icon-prev, #icon-next {
+    width: 32px;
+    height: 32px;
+}
+
+#icon-prev {
+    fill: #333333;
+}
+
+#icon-next {
+    fill: #F2F2F2;
+}
+
+.title-button {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#title-button-prev {
+    color: #333333;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#title-button-next {
+    color: #F2F2F2;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.title-other-slide {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+#title-prev-slide {
+    color: #156963;
+}
+
+#title-next-slide {
+    color: #FFFFFF;
+}
+/*  */
+
+
+/* Блок с преимуществами */
+.pluses-section {
+    width: 1168px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 142px;
+    margin-bottom: 80px;
+}
+
+.pluses-item {
+    width: 268px;
+    height: 155px;
+    padding: 22px 16px;
+    border: 1px solid #E0E0E0;
+}
+
+.item-first-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.item-first-line .icon {
+    width: 48px;
+    height: 48px;
+    fill: #156963;
+    margin-right: 16px;
+}
+
+.item-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #156963;
+    display: inline-block;
+    width: 137px;
+}
+
+.item-description {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    color: #2C1500;
+}
+/*  */
+
+
+/* Блок с товарами */
+.goods-section {
+    width: 1168px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.search-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    background-color: #E0E0E0;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.search-title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.goods {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goods-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-goods {
+    width: 217px;
+    height: 217px;
+    margin-bottom: 16px;
+}
+
+.title-goods {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.price-goods {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+/*  */
+
+
+/* Блок с действием */
+.action-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.action-left-block {
+    margin-right: 84px;
+}
+
+.action-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    color: #2C1500;
+    margin-bottom: 16px;
+    width: 522px;
+}
+
+.action-description {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2C1500;
+    margin-bottom: 74px;
+    width: 507px;
+}
+
+#action-image-1 {
+    width: 568px;
+    height: 250px;
+}
+
+#action-image-2 {
+    width: 513px;
+    height: 609px;
+}
+/*  */
+
+
+
+/* Купить растение */
+.shop-section {
+    display: flex;
+    width: 1168px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    background-color: #F3F4F6;
+    padding: 0 97px;
+    margin-bottom: 80px;
+}
+
+.get-plant-block {
+
+}
+
+.get-plant-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    color: #2C1500;
+    width: 585px;
+    margin-bottom: 32px;
+}
+
+.get-plant-link {
+    padding: 10px 42px;
+    background-color: #156963;
+    display: inline-block;
+    text-decoration: none;
+    color: #FAFEFE;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+/*  */
+
+
+/* Подвал */
+.footer {
+
+}
+
+.footer-content {
+    width: 946px;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.footer-address {
+    width: 282px;
+}
+
+.address-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #156963;
+    margin-bottom: 24px;
+}
+
+.address-subtitle {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.address-description {
+    font-family: Work Sans;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4F4F4F;
+    margin-bottom: 71px;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links-title {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    font-family: Work Sans;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-title {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+#subscribe-email {
+    margin-bottom: 14px;
+    padding: 8px 87px 8px 13px;
+    border: 1px solid #F2F2F2;
+}
+
+.button-submit {
+    color: #ffffff;
+    background-color: #156963;
+    padding: 4px 12px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    width: 51px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    /* height: 1300px; */
+}
